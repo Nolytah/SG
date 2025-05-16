@@ -9,9 +9,11 @@
 
 <body>
 
-  <h1>△ ◯ ▭ 312</h1>
-  <p class="instruction">Clique les symboles dans le bon ordre pour découvrir ton sort.</p>
-
+  <h1>△◯▭312</h1>
+<p class="instruction" style="font-weight: bold;">
+  Clique les symboles dans le bon ordre<br />
+  pour découvrir ton sort.
+</p>
   <div class="buttons">
     <!-- Triangle -->
     <button onclick="selectionner('triangle')">
@@ -38,7 +40,7 @@
   <p id="resultat"></p>
 
   <div id="formulaire" style="display:none; margin-top:20px;">
-    <p>Inscrivez votre prénom pour connaître votre numéro de joueur :</p>
+<p style="font-weight: bold;">Inscrivez votre prénom :</p>
     <input type="text" id="prenom" placeholder="Ton prénom" />
     <button onclick="genererNumero()">Valider</button>
     <p id="numero-joueur" style="margin-top:20px; font-size: 28px;"></p>
