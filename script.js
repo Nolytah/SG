@@ -44,6 +44,8 @@ function genererNumero() {
     affichage.style.color = "red";
     affichage.textContent = "Confidentiel";
     return;
+  } else if (["yasmine", "yayou"].includes(prenom)) {
+    numeroFinal = "218";
   } else {
     joueurConnu = false;
   }
