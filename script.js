@@ -13,13 +13,13 @@ function verifierCode() {
   resultat.className = "";
 
   if (JSON.stringify(tentative) === JSON.stringify(codeSecret)) {
-    resultat.textContent = "Accès autorisé. Découvre ton numéro de joueur";
+    resultat.textContent = "Accès autorisé. Découvrez votre numéro de joueur";
     resultat.classList.add("resultat-success");
 
     // Affiche le formulaire
     document.getElementById("formulaire").style.display = "block";
   } else {
-    resultat.textContent = "Échec. Recommence.";
+    resultat.textContent = "Échec. Recommencez.";
     resultat.classList.add("resultat-error");
     document.getElementById("formulaire").style.display = "none";
   }
