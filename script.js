@@ -34,17 +34,17 @@ function genererNumero() {
   let joueurConnu = true;
 
   if (["deby", "déborah", "deborah"].includes(prenom)) {
-    numeroFinal = "456";
+    numeroFinal = "149";
   } else if (["lisa", "lisouille"].includes(prenom)) {
     numeroFinal = "067";
-  } else if (["manu", "emmanuel"].includes(prenom)) {
+  } else if (["manu", "emmanuel", "doudou"].includes(prenom)) {
     numeroFinal = "456";
   } else if (["ana", "nana", "anaelle", "nanouille"].includes(prenom)) {
     affichage.style.color = "red";
     affichage.textContent = "Confidentiel";
     return;
   } else if (["yasmine", "yayou"].includes(prenom)) {
-    numeroFinal = "218";
+    numeroFinal = "001";
   } else {
     joueurConnu = false;
   }
